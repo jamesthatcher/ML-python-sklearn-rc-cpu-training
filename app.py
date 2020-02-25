@@ -79,6 +79,6 @@ with open("metrics/accuracy.metric", "w+") as f:
     json.dump(accuracy_metric, f)
 
 confusion_metrics = plot_confusion_matrix(clf, X_test, y_test, display_labels=class_names, cmap=plt.cm.Blues)
-confusion_metrics.ax_.set_title("Confusion matrix of KNN classifier on Iris dataset")
+confusion_metrics.ax_.set_title("Confusion matrix of Ridge classifier on Wine dataset")
 plt.savefig('metrics/confusion_matrix.png')
 plt.clf()
